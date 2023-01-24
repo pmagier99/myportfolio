@@ -1,21 +1,9 @@
 import styled from 'styled-components'
+import Title from './Title'
 import WorkOne from '../assets/judywood.png'
 import WorkTwo from '../assets/nunadoggrooming.png'
 import WorkThree from '../assets/pawline.png'
 import {FaArrowRight} from 'react-icons/fa'
-
-const Title = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  h2{font-size: 2rem; margin: 40px 10px;}
-  div{
-    height: 3px;
-    width: 250px;
-    background-color: #F8CC34;  
-  }
-`
 
 const Works = styled.div`
   display: grid;
@@ -41,7 +29,7 @@ const Works = styled.div`
 function Portfolio(){
     return(
         <>
-            <Title><div></div><h2>portfolio</h2><div></div></Title>
+            <Title name={"portfolio"} />
             <Works>
                 <a href={"https://judywoodm4m.com/"} target={"_blank"} rel="noreferrer"><img src={WorkOne} alt={"JudyWoodM4M"} /></a>
                 <a href={"http://www.nunagrooming.co.uk/"} target={"_blank"} rel="noreferrer"><img src={WorkTwo} alt={"NunaGrooming"}/></a>
