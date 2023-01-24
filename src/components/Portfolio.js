@@ -4,6 +4,7 @@ import WorkOne from '../assets/judywood.png'
 import WorkTwo from '../assets/nunadoggrooming.png'
 import WorkThree from '../assets/pawline.png'
 import {FaArrowRight} from 'react-icons/fa'
+import {NavLink} from "react-router-dom";
 
 const Works = styled.div`
   display: grid;
@@ -34,10 +35,10 @@ function Portfolio(){
                 <a href={"https://judywoodm4m.com/"} target={"_blank"} rel="noreferrer"><img src={WorkOne} alt={"JudyWoodM4M"} /></a>
                 <a href={"http://www.nunagrooming.co.uk/"} target={"_blank"} rel="noreferrer"><img src={WorkTwo} alt={"NunaGrooming"}/></a>
                 <a href={"https://pawline-art.netlify.app/"} target={"_blank"} rel="noreferrer"><img src={WorkThree} alt={"PawlinePortfolio"}/></a>
-                <a href={"#"}><div>
+                <NavLink to={"/portfolio"}><div>
                     View more
                     <FaArrowRight/>
-                </div></a>
+                </div></NavLink>
             </Works>
         </>
     )

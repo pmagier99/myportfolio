@@ -4,16 +4,22 @@ import Title from "./Title";
 const StyledOffers = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px;
-  
-  ul{
+  gap: 50px;
+
+  ul {
     margin: 0 20px;
     list-style-type: none;
-    .title{
+    background-color: #444444;
+    border: 0 transparent solid;
+    border-radius: 25px;
+    padding: 15px 40px;
+    .title {
       color: #F8CC34;
       font-size: 1.4rem;
+      margin-bottom: 15px;
     }
-    li{
+
+    li {
       font-size: 1.1rem;
     }
   }
@@ -27,7 +33,7 @@ function Offers(){
             <StyledOffers>
                 <ul>
                     <li className={"title"}>Development</li>
-                    <li>I fully develop your dream website according to your idea.</li>
+                    <li>I fully develop your dream website according to your idea and type of business.</li>
                 </ul>
                 <ul>
                     <li className={"title"}>UI/UX Design</li>

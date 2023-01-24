@@ -1,11 +1,11 @@
 import styled from 'styled-components'
+import {NavLink} from "react-router-dom";
 
 const StyledNavBar = styled.nav`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 70vw;
-  margin: 40px auto;
+  margin-top: 40px;
   
   h1{
     margin-right: auto;
@@ -22,9 +22,9 @@ const StyledNavBar = styled.nav`
     li {
       display: inline-block;
       margin: 0 20px;
+      border-bottom: 1px #272727 solid;
       &:hover{
         color: #F8CC34;
-        cursor: pointer;
         border-bottom: 1px #F8CC34 solid;
       }
     }
@@ -35,11 +35,11 @@ function NavBar(){
     return(
         <>
             <StyledNavBar>
-                <h1>Piotr <span>Magier</span></h1>
+                <h1><NavLink to={"/"}>Piotr <span>Magier</span></NavLink></h1>
                 <ul>
-                    <li>about me</li>
-                    <li>portfolio</li>
-                    <li>contact</li>
+                    <NavLink to={"/about"}><li>about</li></NavLink>
+                    <NavLink to={"/portfolio"}><li>portfolio</li></NavLink>
+                    <NavLink to={"/contact"}><li>contact</li></NavLink>
                 </ul>
             </StyledNavBar>
         </>

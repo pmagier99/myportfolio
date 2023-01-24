@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaEnvelope} from 'react-icons/fa'
+import {NavLink} from "react-router-dom";
 
 
 const StyledAbout = styled.div`
@@ -52,9 +53,9 @@ function About(){
                 <div>
                     <h2>Quick <span>links</span></h2>
                     <ul>
-                        <a href={"#"}><li>about</li></a>
-                        <a href={"#"}><li>portfolio</li></a>
-                        <a href={"#"}><li>contact</li></a>
+                        <NavLink to={"/about"}><li>about</li></NavLink>
+                        <NavLink to={"/portfolio"}><li>portfolio</li></NavLink>
+                        <NavLink to={"/contact"}><li>contact</li></NavLink>
                     </ul>
                 </div>
                 <p>&copy; Piotr Magier 2023</p>

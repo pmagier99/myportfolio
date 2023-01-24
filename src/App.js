@@ -1,17 +1,26 @@
-import NavBar from './components/NavBar'
-import Intro from './components/Intro'
-import Portfolio from "./components/Portfolio";
-import Offers from "./components/Offers";
-import About from "./components/About";
+
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
 
 function App() {
   return (
     <div className="App">
-        <NavBar />
-        <Intro />
-        <Portfolio />
-        <Offers />
-        <About />
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="about" element={<AboutMe />} />
+                    <Route path="portfolio" element={<Portfolio />} />
+                    <Route path="contact" element={<Contact />} />
+                    <Route path="*" element={<NoPage />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     </div>
   );
 }
