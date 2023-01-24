@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import WorkOne from '../assets/judywood.png'
 import WorkTwo from '../assets/nunadoggrooming.png'
 import WorkThree from '../assets/pawline.png'
+import {FaArrowRight} from 'react-icons/fa'
 
 const Title = styled.div`
   display: flex;
@@ -22,22 +23,19 @@ const Works = styled.div`
   gap: 20px;
   img{
     width: 100%;
-    border: 1px #F8CC34 solid;
+    border: 2px #F8CC34 solid;
     border-radius: 20px;
+    &:hover{
+      opacity: 50%;
+    }
   }
-`
-
-const Button = styled.div`
-  text-align: center;
-  margin: 20px auto;
-  width: 10%;
-  background-color: #272727;
-  border: 3px #F8CC34 solid;
-  color: #EFF1F3;
-  padding: 1rem 0;
-  font-size: 1.5rem;
-  font-family: inherit;
-  &:hover{background-color: #F8CC34; color: #272727}
+  a{
+    display: flex; align-items: center;
+    place-self: center;
+    font-size: 1.3rem;
+    svg{margin: 0 5px;}
+    &:hover{color: #F8CC34}
+  }
 `
 
 function Portfolio(){
@@ -48,8 +46,11 @@ function Portfolio(){
                 <a href={"https://judywoodm4m.com/"} target={"_blank"} rel="noreferrer"><img src={WorkOne} alt={"JudyWoodM4M"} /></a>
                 <a href={"http://www.nunagrooming.co.uk/"} target={"_blank"} rel="noreferrer"><img src={WorkTwo} alt={"NunaGrooming"}/></a>
                 <a href={"https://pawline-art.netlify.app/"} target={"_blank"} rel="noreferrer"><img src={WorkThree} alt={"PawlinePortfolio"}/></a>
+                <a href={"#"}><div>
+                    View more
+                    <FaArrowRight/>
+                </div></a>
             </Works>
-            <Button>view more</Button>
         </>
     )
 }
