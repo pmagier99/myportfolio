@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 
 
 const StyledAbout = styled.div`
-  margin-top: 300px;
+  margin-top: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
@@ -36,7 +36,7 @@ const StyledAbout = styled.div`
   }
 `
 
-function About(){
+function Footer(){
     return(
         <>
             <StyledAbout>
@@ -44,9 +44,9 @@ function About(){
                     <h2>Piotr <span>Magier</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget purus leo. Nam mi elit, efficitur pretium sodales a, tempus nec ipsum. Sed lorem lectus, molestie sed auctor sed, aliquam a nulla. Nunc feugiat felis quis dui imperdiet, ut dapibus velit tincidunt. </p>
                     <div className={"media"}>
-                        <FaGithub />
-                        <FaLinkedin />
-                        <FaEnvelope />
+                        <a href={"https://github.com/pmagier99"} target={"_blank"} rel="noreferrer"><FaGithub /></a>
+                        <a href={"https://www.linkedin.com/in/piotrmagier/"} target={"_blank"} rel="noreferrer"><FaLinkedin /></a>
+                        <a href={"mailto:pmagier99@gmail.com"}><FaEnvelope /></a>
                     </div>
                 </div>
 
@@ -64,4 +64,4 @@ function About(){
     )
 }
 
-export default About
+export default Footer
