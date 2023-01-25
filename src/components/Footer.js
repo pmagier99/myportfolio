@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 
 
 const StyledAbout = styled.div`
-  margin-top: 200px;
+  margin-top: 150px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;

@@ -7,12 +7,12 @@ import {FaCss3Alt} from 'react-icons/fa'
 import {FaJsSquare} from 'react-icons/fa'
 import {FaPhp} from 'react-icons/fa'
 import {FaReact} from 'react-icons/fa'
+import Title from "../components/Title";
 
 const StyledPortfolio = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 100px 40px;
 `
 
 const Work = styled.div`
@@ -46,6 +46,7 @@ function Portfolio(){
     return(
         <>
         <StyledPortfolio>
+            <Title name={"portfolio"}/>
             <Work>
                 <img src={WorkOne} alt={"JudyWoodM4M"}/>
                 <div>
