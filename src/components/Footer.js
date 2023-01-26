@@ -32,6 +32,7 @@ const StyledAbout = styled.div`
     list-style-type: none;
     li{
       margin: 20px 0;
+      &:hover{color: #F8CC34}
     }
   }
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import WorkOne from '../assets/judywood.png'
-import WorkTwo from '../assets/nunadoggrooming.png'
-import WorkThree from '../assets/pawline.png'
+import WorkOne from '../assets/portfolio/judywood.jpg'
+import WorkTwo from '../assets/portfolio/nunagrooming.jpg'
+import WorkThree from '../assets/portfolio/pawline.jpg'
 import {FaHtml5} from 'react-icons/fa'
 import {FaCss3Alt} from 'react-icons/fa'
 import {FaJsSquare} from 'react-icons/fa'
@@ -17,7 +17,7 @@ const StyledPortfolio = styled.div`
 
 const Work = styled.div`
   img{
-    width: 100%;
+    width: 40%;
     border: 2px #F8CC34 solid;
     border-radius: 20px;
   }
@@ -35,6 +35,7 @@ const Work = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   //&:hover{
   //  img{opacity: 50%};
   //  cursor: pointer;
@@ -70,7 +71,7 @@ function Portfolio(){
                 <img src={WorkThree} alt={"PawlinePortfolio"}/>
                 <div>
                     <h1>Pawline portfolio</h1>
-                    <p>This is a portfolio website craeted for Pawline. The page is build of sub-pages where all her work can be uploaded. </p>
+                    <p>This is a portfolio website craeted for Pawline. The page is build of sub-pages where all her work can be seen. </p>
                     <p>Technology used:</p>
                     <FaHtml5/><FaCss3Alt/><FaJsSquare/><FaReact/>
                 </div>

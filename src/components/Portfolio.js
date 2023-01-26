@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import Title from './Title'
-import WorkOne from '../assets/judywood.png'
-import WorkTwo from '../assets/nunadoggrooming.png'
-import WorkThree from '../assets/pawline.png'
+import WorkOne from '../assets/portfolio/judywood.jpg'
+import WorkTwo from '../assets/portfolio/nunagrooming.jpg'
+import WorkThree from '../assets/portfolio/pawline.jpg'
 import {FaArrowRight} from 'react-icons/fa'
 import {NavLink} from "react-router-dom";
 
