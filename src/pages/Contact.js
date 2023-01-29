@@ -8,7 +8,7 @@ const Form = styled.form`
   flex-direction: column;
   align-items: center;
   input,textarea,button{
-    width: 50%;
+    width: 60%;
     margin: 10px 0;
     background-color: #444444;
     border: 1px solid transparent;
@@ -17,6 +17,11 @@ const Form = styled.form`
     color: #EFF1F3;
     resize: none;
     font-size: 1rem;
+  }
+  @media (max-width: 1024px){
+    input,textarea,button{
+      width: 90%;
+    }
   }
   button{
     &:hover{background-color: #F8CC34;}

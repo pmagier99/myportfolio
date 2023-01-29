@@ -12,13 +12,20 @@ const Title = styled.p`
   span{color: #F8CC34}
   font-size: 8rem;
   line-height: 1;
+  @media (max-width: 1024px){
+    font-size: 4rem;
+  }
 `
 
 const SubTitle = styled(Title)`
   font-size: 6rem;
+  @media (max-width: 1024px){
+    font-size: 3rem;
+  }
 `
 
 const Button = styled.button`
+  @media (max-width: 1024px){width: 90%}
   margin: 50px 0;
   width: 30%; 
   background-color: #272727;

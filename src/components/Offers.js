@@ -6,6 +6,10 @@ const StyledOffers = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 50px;
 
+  @media (max-width: 1024px){
+    grid-template-columns: 1fr;
+  }
+
   ul {
     margin: 0 20px;
     list-style-type: none;

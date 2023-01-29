@@ -36,6 +36,10 @@ const Work = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1024px){
+    img,div{width: 90%}
+    flex-direction: column;
+  }
   //&:hover{
   //  img{opacity: 50%};
   //  cursor: pointer;

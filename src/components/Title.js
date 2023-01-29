@@ -8,7 +8,7 @@ const StyledTitle = styled.div`
   h2{font-size: 2rem; margin: 100px 10px;}
   div{
     height: 3px;
-    width: 250px;
+    width: clamp(80px, 10vw, 250px);
     background-color: #F8CC34;
   }
 `

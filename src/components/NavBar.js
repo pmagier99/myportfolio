@@ -1,21 +1,28 @@
 import styled from 'styled-components'
 import {NavLink} from "react-router-dom";
+import {FaUserAlt} from 'react-icons/fa'
+import {FaEnvelope} from 'react-icons/fa'
+import {FaFolder} from 'react-icons/fa'
+
 
 const StyledNavBar = styled.nav`
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-top: 40px;
+
+  .mobileNavBar{display:none;}
   
   h1{
     margin-right: auto;
     span{color: #F8CC34}
   }
   
-  ul {
+  .desktopNavBar{display: flex;}
+  
+  .desktopNavBar, .mobileNavBar {
     padding: 0;
     list-style-type: none;
-    display: flex;
     justify-content: flex-end;
     font-weight: bold;
     font-size: 1.6rem;
@@ -29,6 +36,10 @@ const StyledNavBar = styled.nav`
       }
     }
   }
+  @media (max-width: 1024px){
+    .desktopNavBar{display: none;}
+    .mobileNavBar{display: flex}
+  }
 `
 
 function NavBar(){
@@ -36,11 +47,18 @@ function NavBar(){
         <>
             <StyledNavBar>
                 <h1><NavLink to={"/"}>Piotr <span>Magier</span></NavLink></h1>
-                <ul>
+                <ul className={"desktopNavBar"}>
                     <NavLink to={"/about"}><li>about</li></NavLink>
                     <NavLink to={"/portfolio"}><li>portfolio</li></NavLink>
                     <NavLink to={"/contact"}><li>contact</li></NavLink>
                 </ul>
+
+                <ul className={"mobileNavBar"}>
+                    <NavLink to={"/about"}><li><FaUserAlt/></li></NavLink>
+                    <NavLink to={"/portfolio"}><li><FaFolder/></li></NavLink>
+                    <NavLink to={"/contact"}><li><FaEnvelope/></li></NavLink>
+                </ul>
+
             </StyledNavBar>
         </>
     )

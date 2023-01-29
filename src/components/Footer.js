@@ -10,7 +10,11 @@ const StyledAbout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-  
+  font-size: 1rem;
+  @media (max-width: 1024px){
+    grid-template-columns: 1fr;
+    div:nth-child(2){display: none}
+  }
   div:nth-child(2){
     place-self: center;
     align-self: start;

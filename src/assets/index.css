@@ -1,12 +1,14 @@
 *{margin: 0; padding: 0;}
 
+html{font-size: clamp(10px, 2vw, 17px);}
 body {
-  width: 60vw;
+  width: 90%;
+  max-width: 1300px;
   margin: 0 auto;
-  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
-  /*  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
-  /*  sans-serif;*/
-  font-family: "Arial Black", serif;
+  font-family:  BlinkMacSystemFont, 'Arial Black', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #272727;

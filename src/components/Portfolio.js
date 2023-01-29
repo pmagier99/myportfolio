@@ -10,6 +10,11 @@ const Works = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  @media (max-width: 1024px){
+
+    grid-template-columns: 1fr;
+
+  }
   img{
     width: 100%;
     border: 2px #F8CC34 solid;
