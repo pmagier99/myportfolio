@@ -3,6 +3,7 @@ import {FaLinkedin} from 'react-icons/fa'
 import {FaGithub} from 'react-icons/fa'
 import {FaEnvelope} from 'react-icons/fa'
 import {NavLink} from "react-router-dom";
+import {ShortAboutMe} from "./Strings";
 
 
 const StyledAbout = styled.div`
@@ -47,7 +48,7 @@ function Footer(){
             <StyledAbout>
                 <div>
                     <h2>Piotr <span>Magier</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget purus leo. Nam mi elit, efficitur pretium sodales a, tempus nec ipsum. Sed lorem lectus, molestie sed auctor sed, aliquam a nulla. Nunc feugiat felis quis dui imperdiet, ut dapibus velit tincidunt. </p>
+                    <p>{ShortAboutMe}</p>
                     <div className={"media"}>
                         <a href={"https://github.com/pmagier99"} target={"_blank"} rel="noreferrer"><FaGithub /></a>
                         <a href={"https://www.linkedin.com/in/piotrmagier/"} target={"_blank"} rel="noreferrer"><FaLinkedin /></a>

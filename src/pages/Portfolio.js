@@ -9,6 +9,8 @@ import {FaPhp} from 'react-icons/fa'
 import {FaReact} from 'react-icons/fa'
 import Title from "../components/Title";
 
+import {JudyWoodText, JudyWoodTitle,NunaGroomingTitle, NunaGroomingText, PawlineText, PawlineTitle} from "../components/Strings";
+
 const StyledPortfolio = styled.div`
   display: flex;
   flex-direction: column;
@@ -55,9 +57,8 @@ function Portfolio(){
             <Work>
                 <img src={WorkOne} alt={"JudyWoodM4M"}/>
                 <div>
-                    <h1>Judy Wood M4M</h1>
-                    <p>This page was created for Judy Wood. This is her portfolio website, to advert her business. On there users can sign up for her newsletter. The newsletter can be managed over the specially created admin panel.</p>
-                    <p></p>
+                    <h1>{JudyWoodTitle}</h1>
+                    <p>{JudyWoodText}</p>
                     <p>Technology used:</p>
                     <FaHtml5/><FaCss3Alt/><FaJsSquare/><FaPhp/>
                 </div>
@@ -65,8 +66,8 @@ function Portfolio(){
             <Work>
                 <img src={WorkTwo} alt={"NunaGrooming"}/>
                 <div>
-                    <h1>Nuna Grooming</h1>
-                    <p>This website was created for Nuna Grooming. This is a one-page website to advert private business, book appointments and leave reviews. The content can be modified via specially created admin panel.</p>
+                    <h1>{NunaGroomingTitle}</h1>
+                    <p>{NunaGroomingText}</p>
                     <p>Technology used:</p>
                     <FaHtml5/><FaCss3Alt/><FaJsSquare/><FaPhp/>
                 </div>
@@ -74,8 +75,8 @@ function Portfolio(){
             <Work>
                 <img src={WorkThree} alt={"PawlinePortfolio"}/>
                 <div>
-                    <h1>Pawline portfolio</h1>
-                    <p>This is a portfolio website craeted for Pawline. The page is build of sub-pages where all her work can be seen. </p>
+                    <h1>{PawlineTitle}</h1>
+                    <p>{PawlineText}</p>
                     <p>Technology used:</p>
                     <FaHtml5/><FaCss3Alt/><FaJsSquare/><FaReact/>
                 </div>
